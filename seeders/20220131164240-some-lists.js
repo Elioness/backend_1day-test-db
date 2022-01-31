@@ -5,9 +5,9 @@ module.exports = {
     await queryInterface.bulkInsert(
       "todoLists",
       [
-        { name: "Personal List" },
-        { name: "Work List" },
-        { name: "Hobbies List" },
+        { name: "Personal List", createdAt: new Date(), updatedAt: new Date() },
+        { name: "Work List", createdAt: new Date(), updatedAt: new Date() },
+        { name: "Hobbies List", createdAt: new Date(), updatedAt: new Date() },
       ],
       {}
     );
